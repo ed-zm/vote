@@ -6,7 +6,7 @@
   "author": "Eduardo Zarraga <eduardoandres8391@hotmail.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "node server.js",
+    "dev": "node index.js",
     "build": "next build",
     "deploy": "now",
     "start": "cross-env NODE_ENV=production node server.js",
