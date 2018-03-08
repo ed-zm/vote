@@ -3,8 +3,17 @@
   "version": "1.0.0",
   "main": "index.js",
   "repository": "https://github.com/ed-zm/vote",
-  "author": "Eduardo Zarraga",
+  "author": "Eduardo Zarraga <eduardoandres8391@hotmail.com>",
   "license": "MIT",
+  "scripts": {
+    "dev": "node server.js",
+    "build": "next build",
+    "deploy": "now",
+    "start": "cross-env NODE_ENV=production node server.js",
+    "lint": "eslint --color --ext .js,.vue src test/unit/specs test/e2e/specs",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
+  },
   "dependencies": {
     "apollo-client": "^2.2.5",
     "autoprefixer": "^8.0.0",

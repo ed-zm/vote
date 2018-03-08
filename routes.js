@@ -1,0 +1,13 @@
+const nextRoutes = require('next-routes')
+const routes = module.exports = nextRoutes()
+
+routes.add('Main', '/', '/index')
+routes.add('ConfirmEmail', '/confirm_email', 'ConfirmEmail')
+routes.add('Contact', '/contact', 'Contact')
+routes.add('Dashboard', '/dashboard', 'Dashboard')
+routes.add('Landing', '/', 'Landing')
+routes.add('Proposal', '/proposal/:id', 'Proposal')
+routes.add('Search', '/search', 'Search')
+routes.add('SignIn', '/sign_in', 'SignIn')
+routes.add('SignUp', '/sign_up', 'SignUp')
+routes.add('User', '/user/:id', 'User')
